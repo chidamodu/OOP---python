@@ -9,12 +9,18 @@ class Solution():
         :rtype: List[List[int]]
         """
         self.nums=nums
-        res=list(permutations(self.nums, 3))
-        for ele in res:
-            if sum(ele) ==0:
-                answer.append(ele)
-        return ([k for k, v in groupby(sorted(answer, key=sorted), key=sorted)])
+        if len(self.nums) > 3:
+            a = [k for k, v in list(groupby(self.nums))]
+        #print(a)
+            res=list(permutations(a, 3))
+            for ele in res:
+                if sum(ele) ==0:
+                    answer.append(ele)
+            return ([k for k, v in groupby(sorted(answer, key=sorted), key=sorted)])
+        elif len(self.nums) < 3:
+            return []
+        else:
+            return [self.nums]
         
 if __name__ == "__main__":
     s = Solution()
-s.threeSum([5,-9,-11,9,9,-4,14,10,-11,1,-13,11,10,14,-3,-3,-4,6,-15,6,6,-13,7,-11,-15,10,-8,13,-14,-12,12,6,-6,8])
