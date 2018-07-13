@@ -1,2 +1,1 @@
-# OOP---python
-Object Oriented Programming examples using python
+Programming examples in python
