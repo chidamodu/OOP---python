@@ -1,0 +1,5 @@
+Suppose we have eight different colors. Make a program that chooses one of these colors at random and writes out the 
+color.
+
+Hint. Use a list of color names and use the choice function in the random module to pick a list element.
+
