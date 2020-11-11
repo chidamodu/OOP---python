@@ -1,0 +1,6 @@
+Throw two dice a large number of times in a program. Record the sum of the eyes each time and count how many times 
+each of the possibilities for the sum (2, 3, …, 12) appear. Compute the corresponding probabilities and compare them 
+with the exact values. 
+(To find the exact probabilities, set up all the 6×6 possible outcomes of throwing two dice, and then count how many 
+of them that has a sum s for s=2,3,…,12.)
+
