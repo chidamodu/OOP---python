@@ -1,0 +1,8 @@
+The idea is to avoid loops and vectorize computations
+
+The purpose of this exercise is to speed up the code in Exercise 2: Compute a probability by vectorization.
+
+Hint. For an array r of uniformly distributed random numbers on [0,1), make use of r1 = r[r>0.5] and r1[r1<0.6]. 
+An alternative is numpy.where combine with a compound boolean expression with numpy.logical_and(0.5>=r, r<=0.6). 
+                                                                 
+        
