@@ -1,0 +1,6 @@
+Simulate flipping a coin N times and write out the number of tails. The code should be vectorized, i.e., there must 
+be no loops in Python.
+
+Hint. Constructions like numpy.where(r<=0.5, 1, 0) combined with numpy.sum, or r[r<=0.5].size, are useful, where r is 
+an array of random numbers between 0 and 1.
+
